@@ -1,0 +1,17 @@
+# User variables
+export class_dir="/media/balmung/Disco lap/Users/L03089582/Clases/"
+export PATH="$PATH:/opt/nvim-linux64/bin"
+
+# ALIAS
+alias cdcl='cd "$class_dir"'
+alias pn='pnpm'
+alias fcd='cd "$(find . -type d | fzf)"' 
+alias fzp='fzf --preview "less {}"'
+alias bat='batcat'
+
+# some more aliases
+
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias c='clear'

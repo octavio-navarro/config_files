@@ -1,0 +1,5 @@
+PROMPT_DIRTRIM=1
+
+eval "$(ssh-agent -s)" > /dev/null
+ssh-add ~/.ssh/ssh_laptec_linux > /dev/null
+ssh-add ~/.ssh/octavio.pem > /dev/null

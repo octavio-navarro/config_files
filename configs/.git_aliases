@@ -1,0 +1,10 @@
+alias gdf="git diff"
+alias ga="git add"
+alias gc="git commit -m"
+alias gs="git status"
+alias gco="git checkout"
+alias gul="git pull"
+alias gush="git push"
+alias gbr="git branch"
+alias glog="git log --pretty=format:'%h - %an: %s' --graph" # print out log with hash, author name, status, and include graph info
+alias gr="git restore"
