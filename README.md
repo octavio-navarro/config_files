@@ -19,6 +19,7 @@
 - Install tmux using the update_tmux script.
 - Create a .config/tmux folder, and copy the tmux.conf file.
 - To install plugins, type: ctrl+esp -> I
+- Copy the config/nvim folder into ~/.config/nvim/
 
 ## ZSH
 
