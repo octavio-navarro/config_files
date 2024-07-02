@@ -18,6 +18,7 @@
 - Ignore the instructions to setup the terminal, and copy the .zshrc file to the home folder.
 - Install tmux using the update_tmux script.
 - Create a .config/tmux folder, and copy the tmux.conf file.
+- To install plugins, type: ctrl+esp -> I
 
 ## ZSH
 
