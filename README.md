@@ -48,6 +48,7 @@ sudo apt install zsh-syntax-highlighting zsh-autosuggestions
 
 - Use the update_nvim to install the newest version.
 - Copy the `config/nvim` folder into `~/.config/nvim/`.
+- In windows, copy the folder to  %USERPROFILE%\AppData\Local\nvim
 
 ## References
 
