@@ -20,6 +20,7 @@
 - Create a .config/tmux folder, and copy the tmux.conf file.
 - To install plugins, type: ctrl+esp -> I
 - Copy the config/nvim folder into ~/.config/nvim/
+- Copy .zshrc, .fzf.conf, .p10k.zsh, to home
 
 ## ZSH
 
