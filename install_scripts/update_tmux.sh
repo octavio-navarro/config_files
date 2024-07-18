@@ -6,19 +6,20 @@ TMUX_NAME=$(echo $TMUX_FILE | cut -c 1-8)
 
 echo "TMUX Tag name: $TMUX_TAG_NAME"
 echo "TMUX File: $TMUX_FILE"
-echo "TMUX Name: $TMUX_NAME"
+echo "TMUX NAME: $TMUX_NAME"
 
 if [ ! -f $TMUX_FILE ]
 then
-  echo "Downloading from https://github.com/tmux/tmux/releases/download/$TMUX_TAG_NAME/$TMUX_FILE\n"
+	echo "Downloading from: https://github.com/tmux/tmux/releases/download/$TMUX_TAG_NAME/$TMUX_FILE\n"
 
-  curl -LO https://github.com/tmux/tmux/releases/download/$TMUX_TAG_NAME/$TMUX_FILE
-fi 
+	#wget https://github.com/tmux/tmux/releases/download/$TMUX_TAG_NAME/$TMUX_FILE
+	curl -LO https://github.com/tmux/tmux/releases/download/$TMUX_TAG_NAME/$TMUX_FILE
+fi
 
 if [ ! -f $TMUX_FILE ]
 then
-  echo "File failed to download"
-  exit 0
+	echo "File failed to download!"
+	exit 0
 fi
 
 if [ -d .tmux_release ]
