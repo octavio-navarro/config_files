@@ -59,4 +59,8 @@ sudo apt install zsh-syntax-highlighting zsh-autosuggestions
 - NVIM: https://www.youtube.com/watch?v=Mtgo-nP_r8Y&list=PL05iK6gnYad1sb4iQyqsim_Jc_peZdNXf
 - TMUX: https://www.youtube.com/watch?v=DzNmUNvnB04&t=504s
 - ZSH: https://www.youtube.com/watch?v=ud7YxC33Z3w&t=4s
+- NVIM+C++: https://www.youtube.com/watch?v=lsFoZIg-oDs
+- NVIM+Nodejs: https://www.youtube.com/watch?v=CVCBHHFXWNE&t=416s
+- NVIM+Python: https://www.youtube.com/watch?v=4BnVeOUeZxc
+- NVIM+Go: https://www.youtube.com/watch?v=i04sSQjd-qo
 
