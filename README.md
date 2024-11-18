@@ -42,7 +42,8 @@ chsh -s $(which zsh)
 sudo apt install zsh-syntax-highlighting zsh-autosuggestions
 ```
 
-- Copy .zshrc, .fzf.conf, .p10k.zsh, to home
+- Copy .zshrc, .fzf.conf to home
+- Copy zen.toml to ~/.configs/ohmyposh/
 
 ## NVIM
 
@@ -56,6 +57,7 @@ sudo apt install zsh-syntax-highlighting zsh-autosuggestions
 
 ## References
 
+- ZSH Profile: https://www.youtube.com/watch?v=9U8LCjuQzdc
 - NVIM: https://www.youtube.com/watch?v=Mtgo-nP_r8Y&list=PL05iK6gnYad1sb4iQyqsim_Jc_peZdNXf
 - TMUX: https://www.youtube.com/watch?v=DzNmUNvnB04&t=504s
 - ZSH: https://www.youtube.com/watch?v=ud7YxC33Z3w&t=4s
