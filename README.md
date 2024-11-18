@@ -21,6 +21,12 @@
 - Create a `~/.config/tmux` folder, and copy the `configs/tmux.conf` file.
 - To install plugins, type: ctrl+esp -> I
 
+## oh-my-posh
+
+```bash
+curl -s https://ohmyposh.dev/install.sh | bash -s
+```
+
 ## ZSH
 
 - Install using the software manager

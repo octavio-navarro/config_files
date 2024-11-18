@@ -25,6 +25,7 @@ final_space = true
 
     [blocks.segments.properties]
       cache_duration = 'none'
+      home_enabled = true
       display_mode = 'always' # Always show the environment name
 
   [[blocks.segments]]
