@@ -1,0 +1,10 @@
+configs
+install_scripts
+
+\.git
+\.gitignore
+\.gitmodules
+
+^/README.*
+^/LICENSE.*
+^/COPYING

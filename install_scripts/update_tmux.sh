@@ -1,9 +1,10 @@
 #!/bin/bash
-TMUX_RELEASE_DIR="~/.tmux_release"
+TMUX_RELEASE_DIR="tmux_release"
 TMUX_TAG_NAME=$(curl -s https://api.github.com/repos/tmux/tmux/releases/latest | jq -r '.tag_name')
 TMUX_FILE=$(curl -s https://api.github.com/repos/tmux/tmux/releases/latest | jq -r '.assets | .[].name')
 TMUX_NAME=$(echo $TMUX_FILE | cut -c 1-8)
 
+echo "TMUX release dir: $TMUX_RELEASE_DIR"
 echo "TMUX Tag name: $TMUX_TAG_NAME"
 echo "TMUX File: $TMUX_FILE"
 echo "TMUX NAME: $TMUX_NAME"
@@ -22,18 +23,20 @@ then
 	exit 0
 fi
 
-if [ -d .tmux_release ]
+if [ -d $TMUX_RELEASE_DIR ]
 then
+	printf "\nDeleting existing release dir\n"
 	rm -rf $TMUX_RELEASE_DIR
 fi
 
-mkdir $TMUX_RELEASE_DIR
+printf "\nCreating folder...\n"
+mkdir -p $TMUX_RELEASE_DIR
 
 printf "\nExtracting tmux...\n"
 tar -xf $TMUX_FILE -C $TMUX_RELEASE_DIR 
 
-echo "Entering $TMUX_RELEASE_DIR/$TMUX_NAME\n"
-cd $TMUX_RELEASE_DIR/$TMUX_NAME
+printf "\nEntering $TMUX_RELEASE_DIR/$TMUX_TAG_NAME\n"
+cd "$TMUX_RELEASE_DIR/tmux-$TMUX_TAG_NAME"
 
 printf "\nConfigure and install...\n"
 ./configure && make

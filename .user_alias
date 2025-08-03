@@ -1,0 +1,16 @@
+# User variables
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
+# ALIAS
+alias cdcl='cd "$class_dir"'
+alias pn='pnpm'
+alias fcd='cd "$(find . -type d | fzf)"' 
+alias fzp='fzf --preview "less {}"'
+alias bat='batcat'
+
+# some more aliases
+
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias c='clear'

@@ -19,8 +19,7 @@ final_space = true
 
   [[blocks.segments]]
     type = 'python'
-    template = '{{ if .Venv }}{{ .Venv }}{{ end }} ' 
-    # template = '{{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ end }}' 
+    template = '{{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ end }}' 
     foreground = 'green'
     background = 'transparent'
 
