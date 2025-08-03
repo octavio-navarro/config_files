@@ -60,6 +60,22 @@ sudo apt install zsh-syntax-highlighting zsh-autosuggestions
 
 - curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
 
+## HTTPie
+
+- sudo apt install httpie
+
+## Htop
+
+- sudo apt install Htop
+
+## Bat
+
+- sudo apt install bat
+
+## TLDR
+
+- sudo apt install tldr
+
 ### Windows
 
 - We can use choco to install nvim: `choco install neovim`
